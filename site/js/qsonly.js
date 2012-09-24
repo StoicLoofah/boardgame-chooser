@@ -24,7 +24,7 @@ function QsOnly(data, options){
 			return false;
 		});
 		
-		$(window).bind('popstate', function(e){
+		window.onpopstate = function(event){
 			var newNode = null;			
 			if(event.state != null) {
 				newNode = event.state.node;
@@ -37,7 +37,7 @@ function QsOnly(data, options){
 			t.curNode = undefined;
 			t.setNode(newNode);
 			return false;
-		});
+		};
 		
 		t.historyElem.on('click', 'a', function(){
 			var newNode = $(this).attr('href').substring(3);
@@ -53,6 +53,8 @@ function QsOnly(data, options){
 			t.setNode(newNode);
 			return false;
 		});
+		
+		$(window).trigger('popstate');  //webkit does it on page load, ff does not
 	};
 	
 	t.buildHistory = function(curNode){
