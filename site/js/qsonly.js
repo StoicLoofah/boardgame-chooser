@@ -18,25 +18,24 @@ function QsOnly(data, options){
 	t.init = function() {		
 		t.pathsElem.on('click', 'a', function(){
 			var newNode = $(this).attr('href').substring(3);
-			history.pushState($(this).attr('href').substring(3), '', $(this).attr('href'));
+			t.history.push([t.curNode, $(this).text()]);
+			history.pushState({node: newNode, history: t.history}, '', $(this).attr('href'));
 			t.setNode(newNode, $(this).text());
 			return false;
 		});
 		
 		$(window).bind('popstate', function(e){
-			console.debug(event);
-			console.debug("location: " + document.location + ", state: " + event.state);
-			
-			var state = event.state;			
-			if(state != null) {
-				t.history.pop();
+			var newNode = null;			
+			if(event.state != null) {
+				newNode = event.state.node;
+				t.history = event.state.history;
 				t.printFullHistory();
 			} else {
-				state = t.startNode || t.data.startNode;
-				t.buildHistory(state);
+				newNode = t.startNode || t.data.startNode;
+				t.buildHistory(newNode);
 			}
 			t.curNode = undefined;
-			t.setNode(state);
+			t.setNode(newNode);
 			return false;
 		});
 		
@@ -49,7 +48,7 @@ function QsOnly(data, options){
 			} else {
 				t.buildHistory(newNode);
 			}
-			history.pushState(newNode, '', $(this).attr('href'));
+			history.pushState({node: newNode, history: t.history}, '', $(this).attr('href'));
 			t.curNode = undefined;
 			t.setNode(newNode);
 			return false;
@@ -91,7 +90,6 @@ function QsOnly(data, options){
 	
 	t.setNode = function(node, choiceText){
 		if(typeof t.curNode != 'undefined'){
-			t.history.push([t.curNode, choiceText]);
 			t.addToHistoryElem(t.curNode, t.data.nodes[t.curNode].body, choiceText);
 		}
 		t.curNode = node;
