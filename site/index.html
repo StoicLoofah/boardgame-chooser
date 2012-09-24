@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Board Game Chooser</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Board Game Chooser</h1>
+				<p class="lead">Find a board game for any occasion with a few simple questions</p>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					<div id="q-body">
+					</div>
+					<div id="q-paths">
+					</div>
+				</div>
+				<div class="span4">
+					<a href="about.html">About the Board Game Chooser</a>
+					<h2>Your Path</h2>
+					<div id="q-history">
+					</div>					
+				</div>					
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/qsonly.js"></script>
+		<script type="text/javascript" src="js/boardgamedata.js"></script>
+		<script type="text/javascript">
+			function getParameterByName(name)
+			{
+			  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			  var regexS = "[\\?&]" + name + "=([^&#]*)";
+			  var regex = new RegExp(regexS);
+			  var results = regex.exec(window.location.search);
+			  if(results == null)
+			    return "";
+			  else
+			    return decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+			
+			$(document).ready(function(){
+				var startNode = getParameterByName('s');
+				if(startNode == '')
+					startNode = undefined;
+				new QsOnly(questionData, {startNode: startNode});
+			});
+		</script>
+	</body>
+</html>

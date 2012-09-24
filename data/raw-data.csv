@@ -1,0 +1,97 @@
+0,Are you playing with children?,Yes,1,No,2
+1,Younger than 7?,Yes,3,No,4
+2,Play for more than 2 hours?,Yes,5,No,6
+3,Girly girls only?,Yes,7,No,8
+4,Let them experience crushing defeat?,Yes,15,No,16
+5,Hardest rules ever?,Yes,21,No,22
+6,Are you a huge nerd?,Yes,27,No,28
+7,Real rules or just fun?,Rules,9,Fun,10
+8,Candy Land
+9,Actually fun for adults?,Yes,11,No,12
+10,Rube Goldberg?,Yes,13,No,14
+11,Sorry!
+12,Life
+13,Mouse Trap
+14,Operation
+15,Monopoly
+16,Portable?,Yes,17,No,18
+17,Yahtzee!
+18,One winner or team effort?,One,19,Team,20
+19,Small World
+20,Forbidden Island
+21,Axis and Allies
+22,All players in until the end?,Yes,23,No,24
+23,Le Havre
+24,Dice battles or 100% strategy?,Dice,25,Strategy,26
+25,Risk
+26,Game of Thrones
+27,Do you want to spend dozens of hours preparing to play?,Yes,29,No,30
+28,Do you think everyone should just get along?,Yes,35,No,36
+29,Warhammer
+30,Do you really like spending money?,Yes,31,No,32
+31,Magic
+32,Does the name Boomer give you wet dreams?,Yes,33,No,34
+33,Battlestar Galatica
+34,Cosmic Encounter
+35,Do you secretly wish you were a dick? (a P.I),Yes,37,No,38
+36,Do you like to gamble?,Yes,45,No,46
+37,Arkham Horror
+38,Do you have a Monty Python Fetish,Yes,39,No,40
+39,Shadows Over Camelot
+40,Zombies?,Yes,41,No,42
+41,Light Night on Earth
+42,Would you rather fight monsters or viruses,Monsters,43,Viruses,44
+43,Dunegon Run
+44,Pandemic
+45,Rummoli
+46,Are you over 50 years old?,Yes,47,No,48
+47,More than two of you?,Yes,49,No,50
+48,Party Game?,Yes,55,No,56
+49,Cribbage
+50,Are you in Mensa?,Yes,51,No,52
+51,Chess too clich_?,Yes,53,No,54
+52,Backgammon
+53,Go
+54,Chess
+55,Looking to get laid?,Yes,57,No,58
+56,Are you a know it all?,Yes,69,No,70
+57,Twister
+58,Want to embarrass your friends?,Yes,59,No,60
+59,Do you want to be a thug or an artist?,Thug,61,Artist,62
+60,Are you a creative liar?,Yes,63,No,64
+61,Ca$h\'N\'Gun$
+62,Cranium
+63,Words or trivia?,Words,65,Trivia,66
+64,Good with your hands?,Yes,67,No,68
+65,Beyond Balderdash
+66,Wits and Wagers
+67,Jenga (DK Edition)
+68,Taboo
+69,Trivial Pursuit
+70,Get straight A\'s?,Yes,71,No,72
+71,Scrabble
+72,Do you have a train fetish?,Yes,73,No,74
+73,Do you enjoy economics,Yes,75,No,76
+74,Simple Rules?,Yes,77,No,78
+75,Steam
+76,Ticket to Ride
+77,Words or tiles?,Words,79,Tiles,80
+78,Constant hard choices?,Yes,81,No,82
+79,Qwirkle
+80,Scattergories
+81,Farming fetish?,Yes,83,No,84
+82,Card/deck based game?,Yes,89,No,90
+83,Agricola
+84,Do you mind having to buy two games?,Yes,85,No,86
+85,Are all players serious board game geeks?,Yes,87,No,88
+86,Cities and Knights
+87,Puerto Rico
+88,Domaine
+89,Complexity?,Less,91,More,92
+90,Do you like to plan your strat before your turn?,Yes,93,No,94
+91,Dominion
+92,7 Wonders
+93,Settlers of Catan
+94,Defined turns or no down-time?,Turns,95,No defined turns,96
+95,Carcassonne
+96,Pillars of the Earth
