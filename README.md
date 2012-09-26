@@ -15,7 +15,7 @@ The data backing this is all in JSON format as a directed acyclic graph. This pa
 
 ###Browser History
 
-I managed to get this working using the [https://developer.mozilla.org/en-US/docs/DOM/Manipulating_the_browser_history](HTML5 browser history). This has a few wins here.
+I managed to get this working using the [HTML5 browser history](https://developer.mozilla.org/en-US/docs/DOM/Manipulating_the_browser_history). This has a few wins here.
 
 * fewer server requests
 * faster client-side interaction
@@ -26,4 +26,4 @@ It's not too tricky, so look at the code if you're interested
 
 ##Credits
 
-* Thanks the Silver Oak Casino for the [http://www.silveroakcasino.com/blog/entertainment/how-to-choose-the-perfect-board-game.html](data)
+* Thanks the Silver Oak Casino for the [data](http://www.silveroakcasino.com/blog/entertainment/how-to-choose-the-perfect-board-game.html)
